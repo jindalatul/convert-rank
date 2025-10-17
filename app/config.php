@@ -7,7 +7,14 @@ session_set_cookie_params([
 ]);
 session_start();
 
-$env = require __DIR__ . '/env.php';  // load secrets
+// Path to env file at project root
+$envPath = dirname(__DIR__) . '/env/google-login-env.php';
+
+if (!file_exists($envPath)) {
+    error_log('DB env file missing: ' . $envPath);
+    return null;
+}
+$env = require $envPath;
 
 $GOOGLE_CLIENT_ID     = $env['GOOGLE_CLIENT_ID'];
 $GOOGLE_CLIENT_SECRET = $env['GOOGLE_CLIENT_SECRET'];
