@@ -1,0 +1,5 @@
+# Deny web access to env folder
+# change path folder here
+<Directory "/path/to/project-root/env">
+  Require all denied
+</Directory>
