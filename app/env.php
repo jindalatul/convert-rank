@@ -3,7 +3,7 @@
 return [
     'GOOGLE_CLIENT_ID'     => '',
     'GOOGLE_CLIENT_SECRET' => '',
-    'GOOGLE_REDIRECT_URI'  => 'http://localhost/app/google-callback.php',
-    'HOST_NAME'            => 'http://localhost/app'
+    'GOOGLE_REDIRECT_URI'  => 'http://localhost/convert-rank/app/google-callback.php',
+    'HOST_NAME'            => 'http://localhost/convert-rank/app'
 ];
 ?>
