@@ -1,0 +1,4 @@
+
+# Ignore all env.php files (in any folder)
+db_env.php
+google-login-env.php
